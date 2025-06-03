@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('first_name');
             $table->string('last_name');
+            $table->enum('gender', ['male', 'female', 'other']);
             $table->string('cpf')->unique();
             $table->string('phone_number')->unique();
             $table->date('birth_date');
